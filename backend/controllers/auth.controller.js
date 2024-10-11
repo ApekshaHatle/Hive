@@ -70,7 +70,7 @@ export const login = async(req,res) => {
         const isPasswordCorrect = await bcrypt.compare(password, user?.password || "");      //compare password (i.e. entered rn) with user.password (in db) and if user is invalid compare with ""
         
         if(!user || !isPasswordCorrect){
-            return res.status(400).json("invalid username or password");
+            return res.status(400).json({ error: "Invalid username or password" });
         }
 
         generateTokenAndSetCookie(user._id,res);
