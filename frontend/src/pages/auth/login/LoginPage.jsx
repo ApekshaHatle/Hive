@@ -58,7 +58,7 @@ const LoginPage = () => {
 					<h1 className="text-4xl font-extrabold text-primary">{"Let's"} go.</h1>
 					
 					<label className="input input-bordered rounded flex items-center gap-2">
-						<MdOutlineMail className="text-secondary" />
+						< MdOutlineMail className="text-secondary" />
 						<input
 							type="text"
 							className="grow bg-transparent outline-none text-base-content"
