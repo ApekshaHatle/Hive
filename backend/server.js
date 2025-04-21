@@ -9,13 +9,6 @@ import userRoutes from "./routes/user.route.js";
 import postRoutes from "./routes/post.route.js";
 import notificationRoutes from "./routes/notification.route.js";
 
-import cors from 'cors';
-
-app.use(cors({
-  origin: ['https://master.dd56oubv9cry8.amplifyapp.com'], // Replace with your real frontend URL
-  credentials: true
-}));
-
 import connectMongoDB from "./db/connectMongoDB.js";
 
 dotenv.config();
